@@ -396,7 +396,9 @@ body {
             max-height: 0;
             overflow: hidden;
             opacity: 0;
-            transition: max-height 0.4s ease, opacity 0.3s ease,
+            transition:
+              max-height 0.4s ease,
+              opacity 0.3s ease,
               margin-top 0.3s ease;
             margin-top: 0;
           }
@@ -532,5 +534,92 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    flex-direction: column;
+
+    nav {
+      display: none;
+    }
+    .cta {
+      display: none;
+    }
+  }
+
+  .hero {
+    h1 {
+      font-size: 3rem;
+    }
+    .title {
+      p {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .desc {
+    height: 40vh;
+    .h1 {
+      font-size: 1.5rem;
+      width: 90%;
+    }
+  }
+
+  .why {
+    .title {
+      p {
+        text-align: center;
+      }
+    }
+
+    .container {
+      main {
+        flex-direction: column;
+      }
+    }
+
+    .faq {
+      main {
+        .block {
+          h1 {
+            font-size: 2.3rem;
+          }
+
+          .ques {
+            header {
+              h2 {
+                font-size: 1rem;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .last {
+      main {
+        h2 {
+          font-size: 2rem;
+          width: 90%;
+        }
+        p {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+    }
+
+    .footer {
+      main {
+        .nav {
+          nav {
+            padding: 0;
+          }
+        }
+      }
+    }
   }
 }

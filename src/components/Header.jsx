@@ -22,8 +22,9 @@ export default function Header() {
   }, []);
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
+      <h1>Anguledger</h1>
+
       <nav>
-        <h1>Anguledger</h1>
         <ul>
           <li>
             <a href="">Why Anguledger</a>
