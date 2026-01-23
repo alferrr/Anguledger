@@ -2,6 +2,7 @@ import React from "react";
 import ScrollReveal from "./components/ScrollReveal/ScrollReveal.jsx";
 
 import Why from "./sections/Why.jsx";
+import Image from "./assets/app.png";
 
 import { easeOut, motion } from "motion/react";
 
@@ -37,12 +38,16 @@ export default function LandingPage() {
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: easeOut, delay: 1 }}
           >
-            <div className="cta">Get Started Now</div>
+            <a
+              href="https://anguledger-app.vercel.app/dashboard"
+              className="cta"
+            >
+              Get Started Now
+            </a>
           </motion.div>
         </main>
 
-        <div className="app"></div>
-
+        <img src={Image} alt="" />
         <div className="gradient"></div>
       </section>
 

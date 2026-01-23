@@ -23,7 +23,6 @@ export default function Header() {
   return (
     <div className={`header ${isScrolled ? "scrolled" : ""}`}>
       <h1>Anguledger</h1>
-
       <nav>
         <ul>
           <li>
@@ -37,8 +36,9 @@ export default function Header() {
           </li>
         </ul>
       </nav>
-
-      <span className="cta">Get Started</span>
+      <a href="https://anguledger-app.vercel.app/dashboard" className="cta">
+        Get Started Now
+      </a>
     </div>
   );
 }

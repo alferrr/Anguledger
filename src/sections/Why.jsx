@@ -23,7 +23,9 @@ export default function Why() {
 
   const toggleFaq = (id) => {
     setOpenId((prev) =>
-      prev.includes(id) ? prev.filter((openId) => openId !== id) : [...prev, id]
+      prev.includes(id)
+        ? prev.filter((openId) => openId !== id)
+        : [...prev, id],
     );
   };
   const steps = [
@@ -329,7 +331,9 @@ export default function Why() {
           <p>
             Track spending, gain insights, and stay organized with AnguLedger.
           </p>
-          <span className="cta">Get Started Now</span>
+          <a href="https://anguledger-app.vercel.app/dashboard" className="cta">
+            Get Started Now
+          </a>
         </main>
       </div>
       <div className="container empty">
