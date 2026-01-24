@@ -26,13 +26,13 @@ export default function Header() {
       <nav>
         <ul>
           <li>
-            <a href="">Why Anguledger</a>
+            <a href="#why">Why Anguledger</a>
           </li>
           <li>
-            <a href="">How It Works</a>
+            <a href="#how">How It Works</a>
           </li>
           <li>
-            <a href="">FAQ</a>
+            <a href="#faq">FAQ</a>
           </li>
         </ul>
       </nav>

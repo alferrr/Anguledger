@@ -212,7 +212,7 @@ export default function Why() {
   ];
 
   return (
-    <div className="why">
+    <div className="why" id="why">
       <motion.div
         initial={{ opacity: 0, y: 0, filter: "blur(5px)" }}
         whileInView={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -269,7 +269,7 @@ export default function Why() {
       <div className="container empty">
         <main></main>
       </div>
-      <div className="container how">
+      <div className="container how" id="how">
         <main>
           <div className="block">
             <h2>How It Works</h2>
@@ -304,7 +304,7 @@ export default function Why() {
           <div className="block">
             <h1>Frequently Asked Questions</h1>
           </div>
-          <div className="block faqs">
+          <div className="block faqs" id="faq">
             {faqs.map((faq) => {
               const isOpen = openId.includes(faq.id);
 

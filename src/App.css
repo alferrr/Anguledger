@@ -589,9 +589,23 @@ a {
       font-size: 3rem;
     }
     .title {
+      z-index: 99;
       p {
         font-size: 1rem;
       }
+    }
+
+    .cta {
+      z-index: 99;
+    }
+
+    img {
+      display: none;
+    }
+
+    .gradient {
+      height: 10vh;
+      pointer-events: none;
     }
   }
 
