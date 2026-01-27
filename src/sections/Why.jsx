@@ -357,15 +357,24 @@ export default function Why() {
           <div className="block nav">
             <nav>
               <h2>Navigation</h2>
-              <a href="">Why Anguledger</a>
-              <a href="">How It Works</a>
-              <a href="">FAQ</a>
+              <a href="#why">Why Anguledger</a>
+              <a href="#how">How It Works</a>
+              <a href="#faq">FAQ</a>
             </nav>
             <nav>
               <h2>Socials</h2>
-              <a href="">Instagram</a>
-              <a href="">Github</a>
-              <a href="">LinkedIn</a>
+              <a href="https://instagram.com/alfermercads" target="_blank">
+                Instagram
+              </a>
+              <a href="https://github.com/alferrr" target="_blank">
+                Github
+              </a>
+              <a
+                href="https://www.linkedin.com/in/alfer-brent-mercado-094b88206/"
+                target="_blank"
+              >
+                LinkedIn
+              </a>
             </nav>
           </div>
         </main>
